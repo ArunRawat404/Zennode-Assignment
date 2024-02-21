@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Additional CSS for the gift indicator */
+        .gift-indicator {
+            display: inline-block;
+            /* Adjust the width as needed */
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Enter the quantity of each product</h1>
+    <form id="productForm">
+        <label for="productA">Product A Quantity($20/unit):</label>
+        <input type="number" id="productA" name="productA" min="0" value="0"><br><br>
+
+        <label for="productB">Product B Quantity($40/unit):</label>
+        <input type="number" id="productB" name="productB" min="0" value="0"><br><br>
+
+        <label for="productC">Product C Quantity($50/unit):</label>
+        <input type="number" id="productC" name="productC" min="0" value="0"><br><br>
+
+        <span class="gift-indicator">Gift wrap product A<input type="checkbox" id="giftA" name="giftA"></span><br><br>
+
+        <span class="gift-indicator">Gift wrap product B<input type="checkbox" id="giftB" name="giftB"></span><br><br>
+
+        <span class="gift-indicator">Gift wrap product C<input type="checkbox" id="giftC" name="giftC"></span><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <div id="productDetails">
+
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
